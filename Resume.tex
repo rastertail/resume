@@ -1,0 +1,77 @@
+%!TeX program = pdflatex
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{lowtilde}{url}
+
+\documentclass[10pt,letterpaper,withhyper]{altacv}
+\geometry{right=3.75in,marginparwidth=2.5in,marginparsep=0.5in}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{ClearSans}
+
+\definecolor{IFBlue}{HTML}{0F6688}
+\definecolor{IFDarkBlue}{HTML}{00425C}
+\definecolor{IFMediumBlue}{HTML}{17739A}
+\definecolor{IFLightBlue}{HTML}{228FBD}
+
+\definecolor{IFGrey}{HTML}{6D6E71}
+\definecolor{IFDarkGrey}{HTML}{231F20}
+\definecolor{IFMediumGrey}{HTML}{4D4D4F}
+\definecolor{IFLightGrey}{HTML}{808285}
+
+\colorlet{heading}{IFBlue}
+\colorlet{accent}{IFLightBlue}
+\colorlet{tagline}{IFLightBlue}
+\colorlet{emphasis}{IFMediumGrey}
+\colorlet{body}{IFGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{Maxwell Beck}
+\tagline{College Freshman, Avid Computer Enthusiast}
+\personalinfo{
+    \email{max@ryt.one}
+    \phone{815-575-5782}
+    \mailaddress{6508 Field Ct.}
+    \location{Crystal Lake, IL 60012}
+    \homepage{https://ryt.one}
+}
+
+\begin{fullwidth}
+
+\makecvheader
+
+\end{fullwidth}
+
+\cvsection[Sidebar]{Education}
+
+\cvevent{B.Sc. in Computer Science}{University of Wisconsin-Madison}{2021 -- Ongoing}{}
+
+\medskip
+
+\cvevent{}{Prairie Ridge High School}{2017 -- 2021}{Crystal Lake, IL}
+
+\cvsection{Experience}
+
+\cvevent{Engineering Technician (Contractor)}{Stryker}{2021}{Cary, IL}
+\begin{itemize}
+    \item Improved test fixture in preparation for product launch by reprogramming in Python and upgrading hardware
+    \item Tested products slated for limited launch
+    \item Helped prepare for lab buildout; moved old equipment into storage
+    \item Assisted with various other laboratory tasks
+\end{itemize}
+
+\medskip
+
+\cvevent{Grocery Clerk}{Fresh Thyme Market}{2020--2021}{Crystal Lake, IL}
+\begin{itemize}
+    \item Performed critical closing operations including facing and stocking high-demand items
+    \item Assisted customers in finding goods
+    \item Streamlined overall closing process
+\end{itemize}
+
+\end{document}
