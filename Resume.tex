@@ -1,77 +1,168 @@
 %!TeX program = pdflatex
 
-\PassOptionsToPackage{dvipsnames}{xcolor}
-\PassOptionsToPackage{lowtilde}{url}
+\documentclass[letterpaper,10pt]{article}
 
-\documentclass[10pt,letterpaper,withhyper]{altacv}
-\geometry{right=3.75in,marginparwidth=2.5in,marginparsep=0.5in}
+\usepackage[none]{hyphenat}
+\usepackage[margin=1in]{geometry}
+\usepackage{paracol}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{titlesec}
 
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[sfdefault]{ClearSans}
+\usepackage{fbb}
 
-\definecolor{IFBlue}{HTML}{0F6688}
-\definecolor{IFDarkBlue}{HTML}{00425C}
-\definecolor{IFMediumBlue}{HTML}{17739A}
-\definecolor{IFLightBlue}{HTML}{228FBD}
+\setstretch{1.125}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.5in}
+\setlength{\columnseprule}{0.2pt}
+\pagenumbering{gobble}
 
-\definecolor{IFGrey}{HTML}{6D6E71}
-\definecolor{IFDarkGrey}{HTML}{231F20}
-\definecolor{IFMediumGrey}{HTML}{4D4D4F}
-\definecolor{IFLightGrey}{HTML}{808285}
-
-\colorlet{heading}{IFBlue}
-\colorlet{accent}{IFLightBlue}
-\colorlet{tagline}{IFLightBlue}
-\colorlet{emphasis}{IFMediumGrey}
-\colorlet{body}{IFGrey}
-
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
+\titlespacing*{\section}{0pt}{0.5em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.5em}
 
 \begin{document}
 
-\name{Maxwell Beck}
-\tagline{College Freshman, Avid Computer Enthusiast}
-\personalinfo{
-    \email{max@ryt.one}
-    \phone{815-575-5782}
-    \mailaddress{6508 Field Ct.}
-    \location{Crystal Lake, IL 60012}
-    \homepage{https://ryt.one}
-}
+\columnratio{0.382}
+\begin{paracol}{2}
 
-\begin{fullwidth}
+    \begin{center}
 
-\makecvheader
+        {\LARGE \bfseries Maxwell Beck}
 
-\end{fullwidth}
+        \medskip
 
-\cvsection[Sidebar]{Education}
+        1617 Chadbourne Ave. \\
+        Madison, WI \\
+        53726 \\
 
-\cvevent{B.Sc. in Computer Science}{University of Wisconsin-Madison}{2021 -- Ongoing}{}
+        \medskip
 
-\medskip
+        \href{mailto:mjbeck5@wisc.edu}{\faEnvelopeO\, mjbeck5@wisc.edu}
 
-\cvevent{}{Prairie Ridge High School}{2017 -- 2021}{Crystal Lake, IL}
+        \faPhone\,
+        815-575-5782
 
-\cvsection{Experience}
+        \href{https://rastertail.net/}{\faChain\, rastertail.net}
 
-\cvevent{Engineering Technician (Contractor)}{Stryker}{2021}{Cary, IL}
-\begin{itemize}
-    \item Improved test fixture in preparation for product launch by reprogramming in Python and upgrading hardware
-    \item Tested products slated for limited launch
-    \item Helped prepare for lab buildout; moved old equipment into storage
-    \item Assisted with various other laboratory tasks
-\end{itemize}
+        \href{https://github.com/rastertail}{\faGithub\, rastertail}
 
-\medskip
+    \end{center}
 
-\cvevent{Grocery Clerk}{Fresh Thyme Market}{2020--2021}{Crystal Lake, IL}
-\begin{itemize}
-    \item Performed critical closing operations including facing and stocking high-demand items
-    \item Assisted customers in finding goods
-    \item Streamlined overall closing process
-\end{itemize}
+    \section*{Education}
+
+    \textbf{Computer Science B.S.} \\
+    Univeristy of Wisconsin-Madison \\
+    2021--Present \\
+    Expected Graduation 2025
+
+    \medskip
+
+    Prairie Ridge High School \\
+    2017--2021
+
+    \section*{Awards}
+
+    \textbf{2021} Illinois State Scholar
+
+    \medskip
+
+    \textbf{2020} National Merit Scholarship Finalist
+
+    \medskip
+
+    \textbf{2020} AP Scholar with Distinction
+
+    \section*{Skills}
+
+    \textbf{Programming Languages}: Rust, Java, C, C++, JavaScript, TypeScript, Python, GLSL, Mathematica, Assembly
+
+    \medskip
+
+    \textbf{Technologies}: Nix, Docker, WebGPU
+
+    \medskip
+
+    \textbf{General}: Teamwork, Communication, Work Ethic, Public Speaking, Problem Solving
+
+    \medskip
+
+    \textbf{Languages}: Beginner German
+
+    \section*{Interests}
+
+    Realtime and Photorealistic Graphics
+
+    \medskip
+
+    Mathematics
+
+    \medskip
+
+    Electronic Design
+
+    \medskip
+
+    Retro Computers
+
+    \medskip
+
+    Music Composition and Production
+
+    \switchcolumn
+
+    \section*{Work Experience}
+
+    \subsection*{Software Engineering Internship}
+    Stuttgart Inc. -- Crystal Lake, IL \\
+    Summer 2022
+
+    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+        \item Maintained and implemented features on existing C and Python codebases
+        \item Implemented software for upcoming products in C++
+        \item Resolved device tree issues for a custom board based on a Variscite i.MX8M MINI module
+        \item Developed for a PIC32 microcontroller using MPLAB Harmony
+    \end{itemize}
+
+    \subsection*{Engineering Technician (Contractor)}
+    Stryker -- Cary, IL \\
+    Summer 2021
+
+    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+        \item Improved test fixture in preparation for product launch by reprogramming in Python and upgrading hardware
+        \item Tested products slated for limited launch
+        \item Helped prepare for lab buildout; moved old equipment into storage
+        \item Assisted with various other laboratory tasks
+    \end{itemize}
+
+    \section*{Projects}
+
+    \subsection*{Light-Up Name Badge}
+
+    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+        \item Designed a fully custom circuit board utilizing a SAMD21 MCU and WS2813B LEDs in KiCAD
+        \item Programmed with custom Rust firmware based on atsamd-hal
+        \item Implemented various lighting modes including sound reactivity using CMSIS-DSP
+    \end{itemize}
+
+    \subsection*{Caustic Dreams}
+    Four-kilobyte procedural image
+
+    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+        \item Implemented a subset of Tizian Zeltner, Iliyan Georgiev, and Wenzel Jakob's \textit{Specular Manifold Sampling} algorithm
+        \item Represented scene geometry using signed distance fields
+    \end{itemize}
+
+    \subsection*{BS-1}
+    Breadboard Analog Synthesizer
+
+    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+        \item Researched and implemented various analog circuits, including oscillators, filters, and VCAs
+        \item Used KiCAD to aid overall circuit design
+    \end{itemize}
+
+\end{paracol}
 
 \end{document}
