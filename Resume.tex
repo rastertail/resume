@@ -4,8 +4,6 @@
 
 \usepackage[none]{hyphenat}
 \usepackage[margin=1in]{geometry}
-\usepackage{paracol}
-\usepackage{setspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontawesome}
 \usepackage{enumitem}
@@ -14,10 +12,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{fbb}
 
-\setstretch{1.125}
-\setlength{\parindent}{0pt}
-\setlength{\columnsep}{0.5in}
-\setlength{\columnseprule}{0.2pt}
 \pagenumbering{gobble}
 
 \titlespacing*{\section}{0pt}{0.5em}{0.5em}
@@ -25,141 +19,84 @@
 
 \begin{document}
 
-\columnratio{0.382}
 \raggedright
-\begin{paracol}{2}
 
-    \begin{center}
+{\LARGE \bfseries Maxwell Beck}
 
-        {\LARGE \bfseries Maxwell Beck}
+\medskip
 
-        \medskip
+1617 Chadbourne Ave, Madison, WI 53726
 
-        1617 Chadbourne Ave. \\
-        Madison, WI \\
-        53726 \\
+\medskip
 
-        \medskip
+\href{mailto:mjbeck5@wisc.edu}{\faEnvelopeO\, mjbeck5@wisc.edu}
+\, \faPhone\, 815-575-5782
+\, \href{https://www.linkedin.com/in/maxwellbeck1}{\faLinkedin\, maxwellbeck1}
+\, \href{https://rastertail.net/}{\faChain\, rastertail.net}
 
-        \href{mailto:mjbeck5@wisc.edu}{\faEnvelopeO\, mjbeck5@wisc.edu}
+\section*{Education}
 
-        \faPhone\,
-        815-575-5782
+\textbf{Computer Science B.S.} \\
+Univeristy of Wisconsin-Madison \\
+2021--Expected 2025
 
-        \href{https://www.linkedin.com/in/maxwellbeck1}{\faLinkedin\, maxwellbeck1}
+\section*{Experience}
 
-        \href{https://rastertail.net/}{\faChain\, rastertail.net}
+\subsection*{Software Engineer}
+Stuttgart Inc. -- Crystal Lake, IL \\
+Summer 2022
 
-        \href{https://github.com/rastertail}{\faGithub\, rastertail}
+\begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+    \item Maintained and implemented features on existing C and Python codebases
+    \item Led software development for upcoming products in C++ utilizing libuv
+    \item Resolved device tree issues for a custom board based on a Variscite i.MX8M MINI module
+    \item Developed for a PIC32 microcontroller using MPLAB Harmony
+\end{itemize}
 
-    \end{center}
+\subsection*{Engineering Services Technician}
+Stryker Sage -- Cary, IL \\
+Summer 2021
 
-    \section*{Education}
+\begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+    \item Redesigned and improved test fixture in preparation for product launch
+    \item Tested products slated for limited launch
+\end{itemize}
 
-    \textbf{Computer Science B.S.} \\
-    Univeristy of Wisconsin-Madison \\
-    2021--Expected 2025
+\section*{Projects}
 
-    \medskip
+\subsection*{Light-Up Name Badge}
 
-    Prairie Ridge High School \\
-    2017--2021
+\begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+    \item Designed a fully custom circuit board utilizing a SAMD21 MCU in KiCAD
+    \item Programmed with custom Rust firmware including sound reactivity using CMSIS-DSP
+\end{itemize}
 
-    \section*{Awards}
+\subsection*{Caustic Dreams}
+Four-kilobyte procedural image
 
-    \textbf{2021} Illinois State Scholar
+\begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+    \item Implemented a subset of Tizian Zeltner, Iliyan Georgiev, and Wenzel Jakob's \textit{Specular Manifold Sampling} algorithm
+    \item Represented scene geometry using signed distance fields
+\end{itemize}
 
-    \medskip
+\subsection*{BS-1}
+Breadboard Analog Synthesizer
 
-    \textbf{2020} National Merit Scholarship Finalist
+\begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
+    \item Researched and implemented various analog circuits, including oscillators, filters, and VCAs
+    \item Used KiCAD to aid overall circuit design
+\end{itemize}
 
-    \medskip
+\section*{Skills}
 
-    \textbf{2020} AP Scholar with Distinction
+\textbf{Programming Languages}: Rust, Java, C, C++, JavaScript, TypeScript, Python, GLSL, Mathematica, Assembly
 
-    \section*{Skills}
+\medskip
 
-    \textbf{Programming Languages}: Rust, Java, C, C++, JavaScript, TypeScript, Python, GLSL, Mathematica, Assembly
+\textbf{Technologies}: Linux, Git, Docker, Nix, OpenGL, WebGPU
 
-    \medskip
+\medskip
 
-    \textbf{Technologies}: Git, Docker, Nix, OpenGL, WebGPU
-
-    \medskip
-
-    \textbf{General}: Leadership, Teamwork, Communication, Work Ethic, Public Speaking, Problem Solving
-
-    \section*{Interests}
-
-    Realtime and Photorealistic Graphics
-
-    \medskip
-
-    Mathematics
-
-    \medskip
-
-    Electronic Design
-
-    \medskip
-
-    Retro Computers
-
-    \medskip
-
-    Music Composition and Production
-
-    \switchcolumn
-
-    \section*{Work Experience}
-
-    \subsection*{Software Engineer}
-    Stuttgart Inc. -- Crystal Lake, IL \\
-    Summer 2022
-
-    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
-        \item Maintained and implemented features on existing C and Python codebases
-        \item Led software development for upcoming products in C++ utilizing libuv
-        \item Resolved device tree issues for a custom board based on a Variscite i.MX8M MINI module
-        \item Developed for a PIC32 microcontroller using MPLAB Harmony
-    \end{itemize}
-
-    \subsection*{Engineering Services Technician}
-    Stryker Sage -- Cary, IL \\
-    Summer 2021
-
-    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
-        \item Improved test fixture in preparation for product launch by reprogramming in Python and upgrading hardware
-        \item Tested products slated for limited launch
-        \item Assisted with various other laboratory tasks
-    \end{itemize}
-
-    \section*{Projects}
-
-    \subsection*{Light-Up Name Badge}
-
-    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
-        \item Designed a fully custom circuit board utilizing a SAMD21 MCU and WS2813B LEDs in KiCAD
-        \item Programmed with custom Rust firmware based on atsamd-hal
-        \item Implemented various lighting modes including sound reactivity using CMSIS-DSP
-    \end{itemize}
-
-    \subsection*{Caustic Dreams}
-    Four-kilobyte procedural image
-
-    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
-        \item Implemented a subset of Tizian Zeltner, Iliyan Georgiev, and Wenzel Jakob's \textit{Specular Manifold Sampling} algorithm
-        \item Represented scene geometry using signed distance fields
-    \end{itemize}
-
-    \subsection*{BS-1}
-    Breadboard Analog Synthesizer
-
-    \begin{itemize}[topsep=0.5em, partopsep=0em, itemsep=0.125em]
-        \item Researched and implemented various analog circuits, including oscillators, filters, and VCAs
-        \item Used KiCAD to aid overall circuit design
-    \end{itemize}
-
-\end{paracol}
+\textbf{General}: Leadership, Teamwork, Communication, Work Ethic, Public Speaking, Problem Solving
 
 \end{document}
